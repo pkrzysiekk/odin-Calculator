@@ -35,5 +35,3 @@ function operate(a,b,operationSign){
     }
     return result;
 }
-
-console.log(operate(3,0,'/'))
