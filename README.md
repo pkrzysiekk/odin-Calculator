@@ -1,0 +1,1 @@
+The purpose of this project is to create a calculator with JS and CSS styling
