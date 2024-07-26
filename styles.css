@@ -25,7 +25,7 @@ body{
 
 }
 
-.numerical,.operator{
+.numerical,.operator,#comma,.equals{
 
     display: inline-block;
     outline: 0;
