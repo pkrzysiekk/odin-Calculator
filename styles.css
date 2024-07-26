@@ -25,7 +25,7 @@ body{
 
 }
 
-.numerical{
+.numerical,.operator{
 
     display: inline-block;
     outline: 0;

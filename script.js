@@ -1,7 +1,15 @@
 let a=0;
 let b=0;
-let operationSign=''
-
+let operationSign='';
+let buttonsClicked=0;
+const displayText=document.querySelector(".display-text");
+const buttons=document.querySelectorAll(".numerical");
+buttons.forEach((button)=>{
+    button.addEventListener("click",()=>{
+        displayText.textContent+=button.textContent;
+       // addNumerical(button.textContent);
+    })
+})
 function add(a,b){
     return a + b;
 }
@@ -14,6 +22,7 @@ function multiply(a,b){
 function divide(a,b){
     return a / b;
 }
+
 
 function operate(a,b,operationSign){
     let result=0;
