@@ -17,10 +17,10 @@ body{
 }
 .buttons{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 400px;
     gap: 5px;
 
 }
@@ -56,7 +56,11 @@ body{
 .display{
     display: flex;
     height: 60px;
-    width: 350px;
+    width: 390px;
     margin-bottom: 10px;
     border: 2px solid black;
+}
+.operators{
+    display: flex;
+    
 }
