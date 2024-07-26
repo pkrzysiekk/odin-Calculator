@@ -10,7 +10,32 @@ const buttons=document.querySelectorAll(".numerical");
 const equals=document.querySelector("#equals");
 const operators=document.querySelectorAll(".operator");
 const comma=document.querySelector("#comma");
+const deleteButton=document.querySelector(".delete");
+const backspaceButton=document.querySelector(".backspace");
 
+
+deleteButton.addEventListener("click",()=>{
+    displayText.textContent='';
+     a=0;
+     b=0;
+     operationSign='';
+     allowComma=true;
+     buttonsClicked=0;
+     allowOperator=false;
+    
+})
+backspaceButton.addEventListener("click",()=>{
+    text=displayText.textContent.split("")
+    if(text[text.length-1]==='+' || text[text.length-1]==='-' 
+        ||text[text.length-1]==='/'
+         ||text[text.length-1]==='*')
+         {
+            allowOperator=true;
+         }
+    let newText=displayText.textContent
+    newText=newText.slice(0,newText.length-1);
+    displayText.textContent=newText;
+})
 comma.addEventListener("click",()=>{
     if(allowComma)
         displayText.textContent+=comma.textContent;
